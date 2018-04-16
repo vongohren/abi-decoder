@@ -1,4 +1,9 @@
 {
-  "presets": ["es2015"],
-  "plugins": ["add-module-exports", "transform-runtime"]
+    "presets": [
+        ["@babel/preset-env", {
+            "targets": {
+                "browsers": ["last 2 versions"]
+            }
+        }]
+    ]
 }
